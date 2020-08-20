@@ -6,29 +6,18 @@ const twoWords = (wordData) => {
   
     const strToArr = longest.split(' '); 
   
-    let distance = 0;
-  
-    
     for (let i=0; i <strToArr.length; i++){
-      
-      const indexOfFirst = 0;
-      
+
       if (strToArr[i] === first){
-        
-        indexOfFirst = i;
-  
         for (let j =0; j <strToArr.length; j++){
           if (strToArr[j] === last){
-            distance = j - indexOfFirst;
-            
-            return distance;
+            return j - i;
           }
         }
       }
     }
-  
+    return "-1"
   }
-  
   
   const input = "Peter piper picked a patch of pickeled peppers and sally sold seashells by the seashore \npeter\n`sally"; 
   
