@@ -6,7 +6,7 @@ const twoWords = (wordData) => {
   
     const strToArr = longest.split(' '); 
   
-    const distance = 0;
+    let distance = 0;
   
     
     for (let i=0; i <strToArr.length; i++){
