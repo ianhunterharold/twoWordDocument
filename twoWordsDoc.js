@@ -30,6 +30,6 @@ const twoWords = (wordData) => {
   }
   
   
-  const input = "Peter piper picked a patch of pickeled peppers and sally sold seashells by the seashore \n peter \n `sally"; 
+  const input = "Peter piper picked a patch of pickeled peppers and sally sold seashells by the seashore \npeter\n`sally"; 
   
   twoWords(input);
